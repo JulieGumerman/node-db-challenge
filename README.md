@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [x] Create a forked copy of this project.
+- [x] Add your _Team Lead_ as collaborator on Github.
+- [x] Clone your forked version of the Repository.
+- [x] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -38,13 +38,18 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+_The relational database is where the data is stored. SQL is the language that manipulates that data, whether with CRUD operations or through adding/joining tables._
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [x] Why do tables need a `primary key`?
+_Tables need a primary key because it makes it easier to monitor and organize data. Not only is it considered an essential part of the normalization process, but you can't connect tables through foreign keys unless you start with a primary key in the parent table._
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+- [x] What is the name given to a table column that references the primary key on another table.
+_It is a foreign key._
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+_If you want a many-to-many relationship between two tables, you have to have an intermediary table that contains the foreign keys from both parent tables involved. That is what allows you to make that connection._
 
 ## Minimum Viable Product
 
@@ -52,10 +57,10 @@ Take the steps necessary to complete the project from scratch. Start by initiali
 
 Complete the following tasks:
 
-- [ ] Design the data model and use _knex migrations_ to create the database and tables.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
+- [x] Design the data model and use _knex migrations_ to create the database and tables.
+- [x] Build an API with endpoints for:
+  - [x] adding resources.
+  - [x] retrieving a list of resources.
   - [ ] adding projects.
   - [ ] retrieving a list of projects.
   - [ ] adding tasks.
