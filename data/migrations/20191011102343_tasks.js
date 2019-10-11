@@ -11,7 +11,7 @@ exports.up = function(knex) {
           .notNullable()
           .unique();
         tbl.text("notes", 500);
-        tbl.boolean("completed").toDefault(false);
+        tbl.boolean("completed").defaultTo(false);
     })
 };
 
