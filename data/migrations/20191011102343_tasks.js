@@ -7,11 +7,11 @@ exports.up = function(knex) {
           .notNullable()
           .references("id")
           .inTable("projects");
-        tbl.text("description", 500)
+        tbl.text("task_description", 500)
           .notNullable()
           .unique();
         tbl.text("notes", 500);
-        tbl.boolean("completed").defaultTo(false);
+        tbl.boolean("completed").defaultTo("false");
     })
 };
 

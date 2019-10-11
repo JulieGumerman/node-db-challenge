@@ -17,7 +17,10 @@ const addTask = (task) => {
     return db("tasks").insert(task)
 }
 const getTasks = (id) => {
-    return db("tasks").where("project_id", "=", id)
+    return db("tasks as t")
+        .join("projects as p", "p.id", "=", "t.project_id")
+        .where("project_id", "=", id)
+        .select("t.id", "p.name", "p.description", "t.task_description", "t.notes", "t.completed", )
 }
 
 /*********export those functions!!!**************************/
